@@ -13,12 +13,12 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://delivroom-backend.herokuapp.com/"
+        process.env.REACT_APP_API_ENDPOINT_CYCLIC
       );
       setResto(response.data);
       setIsLoading(false);
     } catch (e) {
-      console.error("An error occured");
+      console.error("Failed to get datas");
     }
   };
 
