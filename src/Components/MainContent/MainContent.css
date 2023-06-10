@@ -1,0 +1,71 @@
+.MainContent {
+  /* border: 10px solid blue; */
+  /* background-color: red; */
+  box-sizing: border-box;
+  display: flex;
+}
+.MainContentInside {
+  /* border: 10px solid yellow; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  max-width: 2000px;
+  margin: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .MainContent {
+    /* border: 10px solid blue; */
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+  }
+  .MainContentInside {
+    /* border: 10px solid yellow; */
+    box-sizing: border-box;
+    margin: auto;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Large smartphones and tablets */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .MainContentInside {
+    /* border: 10px solid yellow; */
+    box-sizing: border-box;
+    margin: auto;
+    flex-direction: column-reverse;
+  }
+  .MainContentInside {
+    /* border: 10px solid yellow; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    margin: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1722px) {
+  .MainContentInside {
+    /* border: 10px solid yellow; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1722px) {
+  .MainContentInside {
+    /* border: 2px dashed black; */
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

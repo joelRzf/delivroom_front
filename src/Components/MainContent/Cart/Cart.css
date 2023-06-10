@@ -1,0 +1,202 @@
+.CartWrapper {
+  border: 2px solid lightgrey;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 18%;
+  height: 100%;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 20px 20px grey;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyCart p:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #dcdcdc;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+.emptyCart p:nth-of-type(2) {
+  text-align: center;
+}
+.Cart {
+  width: 100%;
+  color: grey;
+}
+
+.itemWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bouton-quantité-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.validCart {
+  height: 50px;
+  width: 100%;
+  background-color: #29ccbc;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.bouton-plus-moins {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #29ccbc;
+  color: #29ccbc;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.itemQuantity {
+  margin-right: 5px;
+}
+
+hr {
+  border: 1px solid gainsboro;
+}
+
+.itemName {
+  /* border:2px solid brown; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.delivery-fees {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.subTotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .CartWrapper {
+    /* border: 10px dashed purple; */
+    /* background-color: aqua; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 0px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    font-size: 0.7em;
+  }
+}
+
+/* Large smartphones and tablets */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .CartWrapper {
+    /* border: 10px dashed purple; */
+    /* background-color: aqua; */
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .validCart {
+    width: 60%;
+    /* margin-left: 100px; */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1722px) {
+  .CartWrapper {
+    /* border: 10px dashed purple; */
+    /* background-color: aqua; */
+    width: 300px;
+    top: 0px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 20px 20px grey;
+  }
+}
+
+/* Large devices (laptops/desktops, 1722px and up) */
+@media only screen and (min-width: 1722px) {
+  .CartWrapper {
+    /* border: 10px dashed purple; */
+    /* background-color: aqua; */
+    position: -webkit-sticky;
+    position: sticky;
+    width: 300px;
+    top: 0px;
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 20px 20px grey;
+  }
+}

@@ -1,0 +1,188 @@
+.CategoriesWrapper {
+  /* border: 10px solid red; */
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.category {
+  /* border: 10px solid green; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.mealPicture {
+  /* border: 10px dashed purple; */
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.mealBoxGroup {
+  /* background-color: brown; */
+  /* border: dashed 10px black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mealBox {
+  /* background-color: pink; */
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: flex-start;
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .CategoriesWrapper {
+    width: 100%;
+  }
+
+  .categoryTitle {
+    font-size: large;
+    text-align: center;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.7em;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color: white;
+    /* display: flex; */
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 0px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .mealPicture {
+    /* border: 10px dashed purple; */
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .CategoriesWrapper {
+    padding: 10px;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .mealPicture {
+    /* border: 10px dashed purple; */
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px to 1722px) */
+@media only screen and (min-width: 992px) and (max-width: 1722px) {
+  CategoriesWrapper {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+    width: 100%;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 40%;
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  .mealPicture {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+/* Large devices (laptops/desktops, 1722px and up) */
+@media only screen and (min-width: 1722px) {
+  .CategoriesWrapper {
+    /* border: 10px solid red; */
+    box-sizing: border-box;
+    width: 75%;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 40%;
+    font-size: 1.2em;
+  }
+  .mealPicture {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+}
